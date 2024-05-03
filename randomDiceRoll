@@ -1,0 +1,14 @@
+#include <iostream>
+#include <ctime>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string diceSide;
+	string side[] = { "one", "two", "three", "four", "five", "six" };
+	srand((unsigned int)time(NULL));
+	diceSide = side[rand() % 6];
+	cout << "dice rolled: " << diceSide << endl;
+}
