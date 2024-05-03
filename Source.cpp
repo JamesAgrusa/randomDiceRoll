@@ -30,11 +30,7 @@ char rollAgain()
 	cin >> choice;
 	if (choice == 'Y')
 	{
-		string diceSide;
-		string side[] = { "one", "two", "three", "four", "five", "six" };
-		srand((unsigned int)time(NULL));
-		diceSide = side[rand() % 6];
-		cout << "dice rolled: " << diceSide << endl;
+		roll();
 	}
 	else
 	{
